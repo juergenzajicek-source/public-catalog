@@ -1,0 +1,95 @@
+{
+  "type": "Collection",
+  "id": "HS-L2-DEMO",
+  "stac_version": "1.1.0",
+  "description": "## Snow Depth (Snow Height)\n\nSnow Depth (snow height) is the most intuitive snow measurement — how much snow is lying on the ground, given here in centimetres. It shows how the snowpack builds up and thins out through the winter, a familiar reference point for civil protection, the tourism sector, and researchers alike. This layer is a demonstration subset of Waterjade's Level-2 snow products, covering the 2022–2023 winter season over Tyrol, modelled daily at 500 m resolution with the SnowMaps processing chain and the GEOtop physical model. It builds on the snow-modelling work first developed within the Digital Twin of the Alps (DTA).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "GTIF Austria"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sh.dataspace.copernicus.eu/ogc/wms/",
+      "type": "image/png",
+      "title": "GTIF demo - Snow Height",
+      "wms:layers": [
+        "HS"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GTIF demo - Snow Height"
+    }
+  ],
+  "shortdescription": "Depth of snow on the ground.",
+  "thumbnail": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS_GTIF_DEMO.png",
+  "collection_group": "Hydrology",
+  "eox:colorlegend": {
+    "title": "Snow Height (cm)",
+    "tickFormat": ".0f",
+    "domain": [
+      0,
+      250
+    ],
+    "range": [
+      "#ffffff",
+      "#08519c"
+    ],
+    "markType": "rect",
+    "scaleType": "continuous"
+  },
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "GTIF demo - Snow Height",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.41166,
+          46.716906,
+          11.977302,
+          47.615112
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-02T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Waterjade",
+      "url": "https://waterjade.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/HS_GTIF_DEMO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

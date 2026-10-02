@@ -14,12 +14,15 @@
       "rel": "child",
       "href": "./SNWMLT/collection.json",
       "type": "application/json",
-      "title": "Snow Melt",
+      "title": "DTA - Snow Melt",
       "endpointtype": "Sentinel Hub WMS",
       "shortdescription": "Melt rate in mm/day.",
       "id": "SNWMLT",
       "providers": [
-        "Waterjade S.r.l."
+        "Waterjade"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-at-ew.hub-cf.eox.at/api/public/share/public-5fc4gif9-83/thumbnails/SNWMLT.jpg"
       ],
       "agency": [
         "ESA"
@@ -28,15 +31,15 @@
     },
     {
       "rel": "xyz",
-      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
-      "title": "EOxCloudless 2024",
+      "title": "EOxCloudless 2025",
       "roles": [
         "baselayer",
         "visible"
       ],
-      "id": "cloudless-2024",
-      "attribution": "{ EOxCloudless 2024: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a href=\"//s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"//eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
     },
     {
       "rel": "xyz",
@@ -110,7 +113,7 @@
     "markType": "rect",
     "scaleType": "continuous"
   },
-  "title": "Snow Melt",
+  "title": "DTA - Snow Melt",
   "extent": {
     "spatial": {
       "bbox": [
@@ -134,7 +137,7 @@
   "license": "other",
   "providers": [
     {
-      "name": "Waterjade S.r.l.",
+      "name": "Waterjade",
       "url": "https://waterjade.com/"
     }
   ],

@@ -12,9 +12,9 @@
     },
     {
       "rel": "wms",
-      "href": "https://sh.dataspace.copernicus.eu/ogc/wms/1da8fb59-f62e-4a93-b51a-f4f05dd9792c",
+      "href": "https://sh.dataspace.copernicus.eu/ogc/wms/",
       "type": "image/png",
-      "title": "Snow Melt",
+      "title": "DTA - Snow Melt",
       "wms:layers": [
         "SNOW-MELT"
       ],
@@ -26,7 +26,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Snow Melt"
+      "title": "DTA - Snow Melt"
     }
   ],
   "shortdescription": "Melt rate in mm/day.",
@@ -59,7 +59,7 @@
     "scaleType": "continuous"
   },
   "endpointtype": "Sentinel Hub WMS",
-  "title": "Snow Melt",
+  "title": "DTA - Snow Melt",
   "extent": {
     "spatial": {
       "bbox": [
@@ -83,7 +83,7 @@
   "license": "other",
   "providers": [
     {
-      "name": "Waterjade S.r.l.",
+      "name": "Waterjade",
       "url": "https://waterjade.com/"
     }
   ],
